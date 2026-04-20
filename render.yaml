@@ -3,7 +3,7 @@ services:
     name: pdf-rag-backend
     runtime: node
     rootDir: .
-    buildCommand: pnpm install --frozen-lockfile && pnpm --filter @pdf-rag/backend build
+    buildCommand: pnpm install --frozen-lockfile && pnpm --filter @pdf-rag/shared build && pnpm --filter @pdf-rag/backend build
     startCommand: pnpm --filter @pdf-rag/backend start
     plan: free
     autoDeploy: true
