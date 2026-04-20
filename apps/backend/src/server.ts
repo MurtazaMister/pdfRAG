@@ -61,9 +61,10 @@ function createServices(config: AppConfig) {
 export function buildServer(config: AppConfig) {
   const app = Fastify({ logger: true });
   const services = createServices(config);
+  const corsOrigin = config.FRONTEND_ORIGIN === "*" ? true : config.FRONTEND_ORIGIN;
 
   app.decorate("services", services);
-  app.register(cors);
+  app.register(cors, { origin: corsOrigin });
   app.register(multipart);
   registerErrorHandler(app);
   registerHealthRoutes(app);

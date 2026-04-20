@@ -7,6 +7,7 @@ const config = {
   OPENAI_CHAT_MODEL: "gpt-4.1-mini",
   QDRANT_URL: "http://localhost:6333",
   QDRANT_API_KEY: "",
+  FRONTEND_ORIGIN: "*",
   BACKEND_PORT: 4000,
   MAX_UPLOAD_MB: 20,
   CHUNK_SIZE_TOKENS: 800,

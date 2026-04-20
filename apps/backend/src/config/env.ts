@@ -20,6 +20,7 @@ const EnvSchema = z.object({
     .string()
     .url(),
   QDRANT_API_KEY: z.string().optional(),
+  FRONTEND_ORIGIN: z.string().default("*"),
   BACKEND_PORT: z.coerce.number().int().positive().default(4000),
   MAX_UPLOAD_MB: z.coerce.number().positive().default(20),
   CHUNK_SIZE_TOKENS: z.coerce.number().int().positive().default(800),

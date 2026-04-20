@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: pdf-rag-backend
+    runtime: node
+    rootDir: .
+    buildCommand: pnpm install --frozen-lockfile && pnpm --filter @pdf-rag/backend build
+    startCommand: pnpm --filter @pdf-rag/backend start
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: OPENAI_EMBED_MODEL
+        value: text-embedding-3-large
+      - key: OPENAI_CHAT_MODEL
+        value: gpt-4.1-mini
+      - key: FRONTEND_ORIGIN
+        sync: false

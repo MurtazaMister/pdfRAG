@@ -1,9 +1,15 @@
 node_modules
 dist
 .next
+**/.next
 .turbo
 coverage
 playwright-report
 test-results
 .env
+.env.*
+!.env.example
 apps/backend/storage
+apps/backend/apps/backend/storage
+*.tsbuildinfo
+apps/frontend/tsconfig.tsbuildinfo
