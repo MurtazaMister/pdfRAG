@@ -1,4 +1,5 @@
 import { AskRequestSchema } from "@pdf-rag/shared";
+import type { Citation } from "@pdf-rag/shared";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:4000";
 
@@ -6,7 +7,7 @@ export async function askQuestionStream(
   payload: unknown,
   handlers: {
     onToken: (token: string) => void;
-    onCitations: (citations: unknown[]) => void;
+    onCitations: (citations: Citation[]) => void;
     onDone: () => void;
   }
 ) {

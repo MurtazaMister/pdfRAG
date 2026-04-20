@@ -70,5 +70,41 @@
     "status": "ready",
     "uploadedAt": "2026-04-20T17:18:30.173Z",
     "pageCount": 1
+  },
+  "090cb5a3-a409-4e32-ab3a-9f9b6e582abf": {
+    "id": "090cb5a3-a409-4e32-ab3a-9f9b6e582abf",
+    "filename": "DentalScan_Challenge.pdf",
+    "bytes": 16083,
+    "mimeType": "application/pdf",
+    "status": "ready",
+    "uploadedAt": "2026-04-20T21:31:51.872Z",
+    "pageCount": 1
+  },
+  "0839981e-0738-45cc-a08e-8e5e0ead1a0a": {
+    "id": "0839981e-0738-45cc-a08e-8e5e0ead1a0a",
+    "filename": "2604.15421v1.pdf",
+    "bytes": 1048576,
+    "mimeType": "application/pdf",
+    "status": "failed",
+    "uploadedAt": "2026-04-20T22:28:52.334Z",
+    "errorMessage": "Error: Failed to parse PDF: InvalidPDFException: Invalid PDF structure"
+  },
+  "9ce774a5-0302-4e4f-9b75-f779196ca5a1": {
+    "id": "9ce774a5-0302-4e4f-9b75-f779196ca5a1",
+    "filename": "DentalScan_Challenge.pdf",
+    "bytes": 16083,
+    "mimeType": "application/pdf",
+    "status": "ready",
+    "uploadedAt": "2026-04-20T22:29:01.313Z",
+    "pageCount": 1
+  },
+  "097ec6f1-2a00-4469-a823-dee476ec9811": {
+    "id": "097ec6f1-2a00-4469-a823-dee476ec9811",
+    "filename": "DentalScan_Challenge.pdf",
+    "bytes": 16083,
+    "mimeType": "application/pdf",
+    "status": "ready",
+    "uploadedAt": "2026-04-20T22:35:46.336Z",
+    "pageCount": 1
   }
 }

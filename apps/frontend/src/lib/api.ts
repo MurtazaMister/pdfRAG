@@ -1,4 +1,9 @@
-import { AskRequestSchema, type AskResponse } from "@pdf-rag/shared";
+import { AskRequestSchema, type AskResponse, type DocumentStatus } from "@pdf-rag/shared";
+
+type UploadResponse = {
+  documentId: string;
+  status: "uploaded";
+};
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:4000";
 
@@ -21,14 +26,16 @@ async function fetchJson<T>(path: string, init?: RequestInit): Promise<T> {
 export async function uploadDocument(file: File) {
   const form = new FormData();
   form.append("file", file);
-  return fetchJson<{ documentId: string; status: string }>("/v1/documents/upload", {
+  return fetchJson<UploadResponse>("/v1/documents/upload", {
     method: "POST",
     body: form
   });
 }
 
 export async function getDocumentStatus(documentId: string) {
-  return fetchJson<{ status: string; errorMessage?: string }>(`/v1/documents/${documentId}/status`);
+  return fetchJson<{ status: DocumentStatus; errorMessage?: string; filename?: string }>(
+    `/v1/documents/${documentId}/status`
+  );
 }
 
 export async function askQuestion(payload: unknown): Promise<AskResponse> {
