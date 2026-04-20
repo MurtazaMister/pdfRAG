@@ -100,7 +100,10 @@ export function ChatPanel() {
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const el = messagesEndRef.current;
+    if (el && typeof el.scrollIntoView === "function") {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   }, [messages, chatPhase]);
 
   async function onAskSubmit() {

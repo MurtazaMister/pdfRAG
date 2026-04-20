@@ -6,7 +6,7 @@ import { UploadPanel } from "./UploadPanel";
 describe("UploadPanel", () => {
   it("renders upload controls", () => {
     render(<UploadPanel />);
-    expect(screen.getByText("Upload PDF")).toBeTruthy();
-    expect(screen.getByText("Upload")).toBeTruthy();
+    expect(screen.getByRole("button", { name: /upload pdf/i })).toBeTruthy();
+    expect(screen.getByText(/upload a pdf to start chatting/i)).toBeTruthy();
   });
 });

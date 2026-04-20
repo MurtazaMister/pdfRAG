@@ -6,6 +6,7 @@ import { ChatPanel } from "./ChatPanel";
 describe("ChatPanel", () => {
   it("renders chat section", () => {
     render(<ChatPanel />);
-    expect(screen.getByText("Ask about PDF")).toBeTruthy();
+    expect(screen.getByText(/current pdf/i)).toBeTruthy();
+    expect(screen.getByRole("button", { name: /send/i })).toBeTruthy();
   });
 });

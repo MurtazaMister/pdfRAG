@@ -7,9 +7,9 @@
     "build": "pnpm -r build",
     "dev": "pnpm --filter @pdf-rag/backend dev & pnpm --filter @pdf-rag/frontend dev",
     "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck",
+    "typecheck": "pnpm --filter @pdf-rag/shared build && pnpm -r typecheck",
     "test": "pnpm test:unit && pnpm test:integration",
-    "test:unit": "pnpm -r --filter \"./apps/*\" test:unit",
+    "test:unit": "pnpm --filter @pdf-rag/shared build && pnpm -r --filter \"./apps/*\" test:unit",
     "test:integration": "pnpm --filter @pdf-rag/backend test:integration",
     "test:e2e": "pnpm --filter @pdf-rag/frontend test:e2e"
   }
