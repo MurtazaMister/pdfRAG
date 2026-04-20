@@ -1,0 +1,16 @@
+{
+  "name": "pdf-rag",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter @pdf-rag/backend dev & pnpm --filter @pdf-rag/frontend dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm test:unit && pnpm test:integration",
+    "test:unit": "pnpm -r --filter \"./apps/*\" test:unit",
+    "test:integration": "pnpm --filter @pdf-rag/backend test:integration",
+    "test:e2e": "pnpm --filter @pdf-rag/frontend test:e2e"
+  }
+}

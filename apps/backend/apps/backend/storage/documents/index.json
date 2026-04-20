@@ -1,0 +1,74 @@
+{
+  "c33af62a-7a8d-4017-9da6-c7f2cde84536": {
+    "id": "c33af62a-7a8d-4017-9da6-c7f2cde84536",
+    "filename": "2604.15421v1.pdf",
+    "bytes": 1048576,
+    "mimeType": "application/pdf",
+    "status": "failed",
+    "uploadedAt": "2026-04-20T16:46:31.004Z",
+    "errorMessage": "Error: Failed to parse PDF: InvalidPDFException: Invalid PDF structure"
+  },
+  "c46fc062-521a-4207-a0f2-0806e8fd4e9f": {
+    "id": "c46fc062-521a-4207-a0f2-0806e8fd4e9f",
+    "filename": "2604.15421v1.pdf",
+    "bytes": 1048576,
+    "mimeType": "application/pdf",
+    "status": "failed",
+    "uploadedAt": "2026-04-20T16:55:50.298Z",
+    "errorMessage": "Error: Failed to parse PDF: InvalidPDFException: Invalid PDF structure"
+  },
+  "286d6ac0-c4b4-4fb6-854f-f4863484a3fa": {
+    "id": "286d6ac0-c4b4-4fb6-854f-f4863484a3fa",
+    "filename": "2604.15421v1.pdf",
+    "bytes": 1048576,
+    "mimeType": "application/pdf",
+    "status": "failed",
+    "uploadedAt": "2026-04-20T16:57:04.864Z",
+    "errorMessage": "Error: Failed to parse PDF: InvalidPDFException: Invalid PDF structure"
+  },
+  "377d0008-9690-4c06-8942-9047f89e68b6": {
+    "id": "377d0008-9690-4c06-8942-9047f89e68b6",
+    "filename": "2604.15421v1.pdf",
+    "bytes": 1048576,
+    "mimeType": "application/pdf",
+    "status": "failed",
+    "uploadedAt": "2026-04-20T17:08:48.921Z",
+    "errorMessage": "Error: Failed to parse PDF: InvalidPDFException: Invalid PDF structure"
+  },
+  "c6a61bd2-af1d-4ae4-a030-60d8b8a6716a": {
+    "id": "c6a61bd2-af1d-4ae4-a030-60d8b8a6716a",
+    "filename": "DentalScan_Challenge.pdf",
+    "bytes": 16083,
+    "mimeType": "application/pdf",
+    "status": "ready",
+    "uploadedAt": "2026-04-20T17:09:31.051Z",
+    "pageCount": 1
+  },
+  "7bdaa7e6-7bc3-44bc-9113-8af5853597ae": {
+    "id": "7bdaa7e6-7bc3-44bc-9113-8af5853597ae",
+    "filename": "2604.15421v1.pdf",
+    "bytes": 1048576,
+    "mimeType": "application/pdf",
+    "status": "failed",
+    "uploadedAt": "2026-04-20T17:14:51.010Z",
+    "errorMessage": "Error: Failed to parse PDF: InvalidPDFException: Invalid PDF structure"
+  },
+  "5a16799e-f58b-40ff-964c-0cd60ba05f54": {
+    "id": "5a16799e-f58b-40ff-964c-0cd60ba05f54",
+    "filename": "DentalScan_Challenge.pdf",
+    "bytes": 16083,
+    "mimeType": "application/pdf",
+    "status": "ready",
+    "uploadedAt": "2026-04-20T17:15:00.728Z",
+    "pageCount": 1
+  },
+  "e24eb82d-3112-49fa-9c3b-2359931f3fcc": {
+    "id": "e24eb82d-3112-49fa-9c3b-2359931f3fcc",
+    "filename": "DentalScan_Challenge.pdf",
+    "bytes": 16083,
+    "mimeType": "application/pdf",
+    "status": "ready",
+    "uploadedAt": "2026-04-20T17:18:30.173Z",
+    "pageCount": 1
+  }
+}
