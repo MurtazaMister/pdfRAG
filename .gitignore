@@ -13,3 +13,4 @@ apps/backend/storage
 apps/backend/apps/backend/storage
 *.tsbuildinfo
 apps/frontend/tsconfig.tsbuildinfo
+WorkFlow.md
